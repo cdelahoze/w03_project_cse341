@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const errorMiddleware = require('./middleware/errors')
-const mongoose = require("mongoose");
 require("dotenv").config();
 const port = process.env.PORT || 8080;
 const app = express();
@@ -32,8 +31,4 @@ mongodb.initDb((err) => {
     }
   });
 
-  mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Connected to MongoDB Atlas"))
-  .catch((error) => console.error(error));
 
