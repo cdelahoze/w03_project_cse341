@@ -22,7 +22,7 @@ content-type: application/json
 
 
 ### PUT users
-PUT http://localhost:8080/users/65f4120b9e61e5cdd4355bca HTTP/1.1
+PUT http://localhost:8080/users/65f6726d40deb699b49135c7 HTTP/1.1
 content-type: application/json
 
 {
@@ -62,7 +62,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT http://localhost:8080/expenses/65f4120b9e61e5cdd4355bca HTTP/1.1
+PUT http://localhost:8080/expenses/65f6729a40deb699b49135c8 HTTP/1.1
 content-type: application/json
 
 {
