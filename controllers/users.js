@@ -68,7 +68,7 @@ const createUsers = async (req, res, next) => {
 };
 
 const updateUsers = async (req, res, next) => {
-  try {
+ 
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
     const contact = {
@@ -79,6 +79,7 @@ const updateUsers = async (req, res, next) => {
       repeatPassword: req.body.repeatPassword,
       userName: req.body.userName,
     };
+    try {
     const result = await authSchema.validateAsync(req.body); // Validation
     console.log(result);
     const response = await mongodb
